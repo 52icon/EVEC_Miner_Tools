@@ -1,1 +1,0 @@
-# XMRigOfCentOS6
