@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 mv $name /root/$name
 cd /root
 name=XCP_EVEC.sh
