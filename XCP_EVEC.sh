@@ -1,8 +1,8 @@
 #!/bin/bash
 clear
+name=XCP_EVEC.sh
 mv $name /root/$name
 cd /root
-name=XCP_EVEC.sh
 echo -e "\033[34m===========================================================\033[0m"
 echo
 echo -e "\033[36m        XMRig CentOS6 Patch\033[0m"
