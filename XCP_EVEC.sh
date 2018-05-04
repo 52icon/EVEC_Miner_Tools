@@ -1,7 +1,6 @@
 #!/bin/bash
 clear
 name=XCP_EVEC.sh
-mv $name /root/$name
 cd /root
 echo -e "\033[34m===========================================================\033[0m"
 echo
