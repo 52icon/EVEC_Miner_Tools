@@ -11,7 +11,9 @@ echo -e "\033[36m    1.Install libmicrohttpd\033[0m"
 echo
 echo -e "\033[36m    2.Update Of Glibc-2.14\033[0m"
 echo
-echo -e "\033[36m    3.Download XMRig for CentOS6\033[0m"
+echo -e "\033[36m    3.Download XMRig for CentOS6 (CryptoNight)\033[0m"
+echo
+echo -e "\033[36m    4.Download XMRig for CentOS6 (CryptoNight v7)\033[0m"
 echo
 echo -e "\033[36m    0.Exit Patch \033[0m"
 echo
@@ -49,10 +51,19 @@ fi
 
 if [[ $mode == "3" ]]     
 then     
-	echo -e "Type：\033[32m Download XMRig for CentOS6 \033[0m"; 
+	echo -e "Type：\033[32m Download XMRig for CentOS6 (CryptoNight)\033[0m"; 
 	sleep 1
 	cd /root
 wget http://origin.evec.cc/github/xmr/xmrig/xmrig.tar.gz
+bash $name
+fi
+
+if [[ $mode == "4" ]]     
+then     
+	echo -e "Type：\033[32m Download XMRig for CentOS6 (CryptoNight v7)\033[0m"; 
+	sleep 1
+	cd /root
+wget http://origin.evec.cc/github/xmr/xmrig/xmrig_v7.tar.gz
 bash $name
 fi
 
