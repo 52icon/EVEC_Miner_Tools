@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-name=XCP_EVEC.sh
 cd /root
 echo -e "\033[34m===========================================================\033[0m"
 echo
@@ -26,7 +25,7 @@ then
 	echo -e "Type：\033[32m Install libmicrohttpd \033[0m"; 
 	sleep 1
 yum install libmicrohttpd -y
-bash $name
+bash $0
 fi
 
 if [[ $mode == "2" ]]     
@@ -46,7 +45,7 @@ LD_PRELOAD=/opt/glibc-2.14/lib/libc-2.14.so ln -s /opt/glibc-2.14/lib/libc-2.14.
 ln -s /opt/glibc-2.14/lib/libc-2.14.so /lib64/libc.so.6
 strings /lib64/libc.so.6 |grep GLIBC_
 cd
-bash $name
+bash $0
 fi
 
 if [[ $mode == "3" ]]     
@@ -55,7 +54,7 @@ then
 	sleep 1
 	cd /root
 wget http://origin.evec.cc/github/xmr/xmrig/xmrig.tar.gz
-bash $name
+bash $0
 fi
 
 if [[ $mode == "4" ]]     
@@ -64,7 +63,7 @@ then
 	sleep 1
 	cd /root
 wget http://origin.evec.cc/github/xmr/xmrig/xmrig_v7.tar.gz
-bash $name
+bash $0
 fi
 
 if [[ $mode == "0" ]]     
