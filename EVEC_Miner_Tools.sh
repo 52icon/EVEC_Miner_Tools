@@ -82,7 +82,6 @@ fi
 if [[ $mode == "6" ]]     
 then     
 echo 128 > /proc/sys/vm/nr_hugepages
-sysctl -w vm.nr_hugepages=128
 sysctl -p
 echo "* soft nofile 1048576" >> /etc/security/limits.conf 
 echo "* hard nofile 1048576" >> /etc/security/limits.conf
